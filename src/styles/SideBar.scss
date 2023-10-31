@@ -1,0 +1,50 @@
+.sideBarScaffold {
+  height: 100%;
+  width: 4vw;
+  border: solid black 0.25em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .logo {
+    position: absolute;
+    top: 0.7rem;
+  }
+  .search {
+    position: absolute;
+    bottom: 0.7rem;
+  }
+  .displayAllNotes {
+    height: 50vh;
+    overflow: auto;
+    margin-bottom: 1rem;
+  }
+  // This is the shadow box animation
+  .shadow-box {
+    height: 62px;
+    width: 57px;
+    border: solid 5px white;
+    border-radius: 8px;
+
+    margin-bottom: 1.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: box-shadow 0.35s;
+
+    .themeIconButton {
+      border: none;
+      background: none;
+    }
+
+    .themeIconButton:hover {
+      cursor: pointer;
+    }
+  }
+  .shadow-box:hover {
+    cursor: pointer;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Inconsolata", monospace;
+}
+
+.scaffold {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 99.6vh;
+}
+
+.windowControl {
+  display: none;
+}
+
+.pageWarning {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  // align-items: center; //왠진 모르겠지만 안됨.
+  transform: translateY(50vh);
+
+  p {
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Inconsolata", monospace;
+  }
+}
+
+/* Media Query for desktop devices */
+@media screen and (min-width: 1336px) {
+  .windowControl {
+    display: block;
+  }
+  .pageWarning {
+    display: none;
+  }
+}

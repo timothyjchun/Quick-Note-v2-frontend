@@ -1,0 +1,329 @@
+.noteDisplayScaffold {
+  position: relative;
+  height: 100%;
+  width: 72.2vw;
+  display: flex;
+  flex-direction: column;
+  .titleSectionScaffold {
+    height: 5vh;
+    width: 72vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+
+    button {
+      background: none;
+      border: none;
+    }
+    button:hover {
+      cursor: pointer;
+    }
+  }
+  .contentDisplay {
+    width: 73.6vw;
+    height: 78vh;
+    overflow: auto;
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    div {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 73vw;
+      position: relative;
+
+      margin-top: 2vh;
+      margin-bottom: 2vh;
+
+      #createdTime {
+        color: #00000080;
+      }
+
+      .contentDisplayContainer {
+        border-radius: 7px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        p {
+          font-size: 1.2rem;
+        }
+
+        button {
+          border: none;
+          background: none;
+          font-size: 1.2rem;
+          text-decoration: underline;
+          color: purple;
+        }
+        button:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .inputSectionScaffold {
+    height: 19vh;
+    width: 73.5vw;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .inputSectionParent {
+      position: relative;
+      height: 16vh;
+      width: 73vw;
+      //   margin-left: 0.3vw;
+      border-radius: 10px;
+      background-color: #d9d9d940;
+
+      #fileSelectDiv {
+        position: absolute;
+        left: 10px;
+        bottom: 5px;
+        #fileSelector {
+          display: none;
+        }
+        #fileSelectorLabel:hover {
+          cursor: pointer;
+        }
+      }
+
+      .textArea {
+        width: 69vw;
+        height: 5vh;
+        resize: none;
+        outline: none;
+        border: none;
+        font-size: 1.3rem;
+        background-color: transparent;
+        // background-color: #d9d9d940;
+        padding: 2rem;
+      }
+      .sendButton {
+        border: solid black 0.17rem;
+        border-radius: 7px;
+        height: 2.7vh;
+        width: 3.2vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        background-color: white;
+        font-weight: bold;
+        font-size: 1.2rem;
+
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+      }
+      .sendButton:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .mainDisplayScaffold {
+    background-color: #d9d9d9;
+    width: 73.9vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transform: translateY(20%);
+      h1 {
+        font-size: 5.5rem;
+        margin-bottom: 1.2rem;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.blur {
+  position: absolute;
+  height: 100%;
+  // width: 100%;
+  width: 74vw;
+  backdrop-filter: blur(10px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  .blurPageScaffold {
+    height: 80vh;
+    width: 50vw;
+    // border: black solid 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .close {
+      align-self: flex-end;
+      background: none;
+      border: none;
+    }
+    .close:hover {
+      cursor: pointer;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 90%;
+      .createPageMainContainer {
+        display: flex;
+        height: 90%;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .createPageContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .createPageDesc {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            width: 35vw;
+            // border: solid black 3px;
+            #title {
+              font-weight: bold;
+              font-size: 2rem;
+            }
+            #requirement {
+              color: #2de22f;
+              font-size: 1.3rem;
+            }
+          }
+          .password {
+            width: 35vw;
+            border: solid black 0.25rem;
+            height: 7vh;
+          }
+          .createPageInput {
+            width: 35vw;
+            border: solid black 0.25rem;
+            height: 7vh;
+            font-size: 1.7rem;
+            font-weight: 600;
+            text-align: center;
+          }
+          .divst {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+          }
+          .showPassword {
+            transform: translate(15vw, -5vh);
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+          }
+          .showPassword:hover {
+            cursor: pointer;
+          }
+        }
+        .submitButton {
+          height: 7vh;
+          width: 20vw;
+          border: solid black 0.25rem;
+          font-weight: bold;
+          font-size: 1.5rem;
+        }
+        .submitButton:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+    .settingsScaffold {
+      display: flex;
+      height: 70%;
+      width: 70%;
+      transform: translateY(15%);
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      // border: solid black 3px;
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        font-size: 2rem;
+        font-weight: bold;
+        .titleContainer {
+          // transform: translate(2%);
+        }
+        .box {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          width: 35vw;
+          border: solid black 0.25rem;
+          height: 7vh;
+          background-color: white;
+        }
+      }
+
+      .noteSettings {
+        display: flex;
+        height: 30vh;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      button {
+        width: 25vw;
+        height: 7vh;
+        border: solid #ff0000 0.25rem;
+        // opacity: 0.25;
+        background-color: #ff000010;
+
+        font-size: 2rem;
+        font-weight: bold;
+        color: #ff0000;
+      }
+
+      button:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
